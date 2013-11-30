@@ -2,7 +2,6 @@
 #Simple tic-tac-toe game 
 #Status:11-29-2013
 #Win conditions complete
-#
 #This is a simple exercise 
 #I did to become familiar with python syntax
 #Feel free to play and build upon
