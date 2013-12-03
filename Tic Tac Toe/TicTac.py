@@ -11,7 +11,7 @@ class TicTac:
     #replaces board with x, checks if entry has been used
     def turn(self,p,x):
 
-        if (p >8):
+        if p>8 or p<0:
             print "No such entry"
             return 0
 
