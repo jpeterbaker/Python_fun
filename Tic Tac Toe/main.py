@@ -27,8 +27,12 @@ def main():
         while (valid != 1):
             print "==============Player 1 !============="
             print ""
-            p1=int(raw_input("P1 choose a location: "))
-            valid=game.turn(p1,"X")
+            try: 
+                p1=int(raw_input("P1 choose a location: "))
+                valid=game.turn(p1,"X")
+            except ValueError:
+                print "Not valid, enter a number: "
+
             game.show()
             if(game.win(1) == 0):
                 return
@@ -44,8 +48,12 @@ def main():
         while (valid != 1):
             print "==============Player 2 !============="
             print ""
-            p2=int(raw_input("P2 choose a location: "))
-            valid =game.turn(p2,"O")
+            try:
+                p2=int(raw_input("P2 choose a location: "))
+                valid =game.turn(p2,"O")
+
+            except ValueError:
+                print "Not valid, enter a number: "
             game.show()
             if(game.win(2) == 0):
                 return
